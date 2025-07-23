@@ -3,7 +3,7 @@ htmlの制作課題
 
 
 # clone後に実行するコマンド
-$ cd mantan && chmod +x setup.sh && ./setup.sh
+$ cd mantan & ./setup.sh
 
 
 # おまけ
@@ -15,4 +15,4 @@ $ cd mantan && chmod +x setup.sh && ./setup.sh
 $ code web/resources/views
 
 -エイリアス設定
-$ chmod +x set_alias.sh && ./set_alias.sh
+$ ./set_alias.sh
