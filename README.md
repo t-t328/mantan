@@ -1,29 +1,18 @@
 # mantan
 htmlの制作課題
 
-# clone後に実行するコマンド
-$ cd web &&
-cp .env.example .env &&
-chmod -R 777 storage bootstrap/cache &&
-docker run --rm \
--u "$(id -u):$(id -g)" \
--v $(pwd):/var/www/html \
--w /var/www/html \
-laravelsail/php81-composer:latest \
-composer install --ignore-platform-reqs &&
-./vendor/bin/sail up -d
 
-$ sail php artisan key:generate &&
-sail composer install &&
-sail npm install &&
-sail artisan migrate &&
-sail npm run dev
+# clone後に実行するコマンド
+$ cd mantan && chmod +x setup.sh && ./setup.sh
+
 
 # おまけ
-編集ファイルオープン
-shift + command + p -> shell
-code web/resources/views
 
-エイリアス設定 (zsh)
-$ alias sail='./vendor/bin/sail'
-$ source ~/.zshrc
+-編集ファイルオープン (mac)
+    vscode上で "shift + command + p"
+ -> 検索欄に "shell" と入力
+ -> インストールを選択
+$ code web/resources/views
+
+-エイリアス設定
+$ chmod +x set_alias.sh && ./set_alias.sh
