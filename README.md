@@ -5,6 +5,8 @@ htmlの制作課題
 # clone後に実行するコマンド
 $ cd mantan & ./setup.sh
 
+#vite起動
+$ make up
 
 # おまけ
 
@@ -16,3 +18,6 @@ $ code web/resources/views
 
 -エイリアス設定
 $ ./set_alias.sh
+
+-tailwindチートシート
+https://nerdcave.com/tailwind-cheat-sheet
