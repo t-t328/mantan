@@ -1,3 +1,5 @@
+alias sail='./vendor/bin/sail'
+
 cd web
 
 cp .env.example .env
@@ -11,10 +13,10 @@ docker run --rm \
     laravelsail/php81-composer:latest \
     composer install --ignore-platform-reqs
 
-./vendor/bin/sail up -d
+sail up -d
 
-./vendor/bin/sail php artisan key:generate
-./vendor/bin/sail artisan migrate
-./vendor/bin/sail composer install
-./vendor/bin/sail npm install
-./vendor/bin/sail npm run dev
+sail php artisan key:generate
+sail artisan migrate
+sail composer install
+sail npm install
+sail npm run dev
