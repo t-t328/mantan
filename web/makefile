@@ -1,4 +1,4 @@
-.PHONY: up down build ps logs
+.PHONY: up down build ps logs logs-f
 up:
 	./vendor/bin/sail up -d && ./vendor/bin/sail npm run dev
 down:
@@ -9,3 +9,5 @@ ps:
 	./vendor/bin/sail ps
 logs:
 	./vendor/bin/sail logs
+logs-f:
+	./vendor/bin/sail logs -f
