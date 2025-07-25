@@ -29,3 +29,8 @@ $ ./set_alias.sh
 
 -tailwindチートシート
 https://nerdcave.com/tailwind-cheat-sheet
+
+# タスク
+-データベース
+-コンポーネント
+-スタイルシート
